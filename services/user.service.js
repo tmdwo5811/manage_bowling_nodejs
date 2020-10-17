@@ -4,6 +4,7 @@ exports.hello = async (message) => {
     try {
         const query = {name: message}
         const result = await userRepository.create(query);
+        
         return result;
     } catch (e) {
         console.log(e);
