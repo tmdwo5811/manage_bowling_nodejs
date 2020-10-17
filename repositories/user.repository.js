@@ -9,3 +9,13 @@ exports.create = async (query) => {
         throw e;
     }
 }
+
+exports.paginate = async (query) => {
+    try {
+        const result = await userModel.paginate(query);
+        return result;
+    } catch (e) {
+        console.log(e);
+        throw e;
+    }
+}
