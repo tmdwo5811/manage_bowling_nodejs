@@ -5,6 +5,9 @@ module.exports = (router) => {
     router.route("/hello")
     .get(userController.hello);
 
+    router.route("/hello2")
+    .get(userController.hello);
+
     router.route("/create/message")
     .get(userController.createMessage);
 
