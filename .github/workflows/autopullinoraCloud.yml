@@ -15,5 +15,4 @@ jobs:
         port: 22
         script: |
         pwd
-        cd /home/root/manate_bowling_nodejs
         sh /home/root/manage_bowling_nodejs/script.sh
