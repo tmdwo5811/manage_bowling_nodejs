@@ -13,7 +13,4 @@ jobs:
         username: root
         password: 1234
         port: 22
-        script:|
-        pwd 
-        cd /home/root/manate_bowling_nodejs
-        sh /home/root/manage_bowling_nodejs/script.sh
+        script: pwd && cd /home/root/manate_bowling_nodejs && sh /home/root/manage_bowling_nodejs/script.sh
