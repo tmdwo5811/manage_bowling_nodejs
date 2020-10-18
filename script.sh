@@ -2,6 +2,7 @@
 eval `ssh-agent`
 echo "start manage_bowling_prj ShellScript"
 echo "start git pull"
+pwd
 if ! (git pull) then
     echo "Git pull 실패"
     exit 1
