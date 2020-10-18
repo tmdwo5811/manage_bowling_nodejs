@@ -10,7 +10,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: 193.123.244.14
-        username: user
+        username: root
         password: 1234
         port: 22
         script: sh /home/root/manage_bowling_nodejs/script.sh
