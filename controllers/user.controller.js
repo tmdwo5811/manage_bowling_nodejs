@@ -2,6 +2,17 @@ const userService = require('../services/user.service');
 
 exports.hello = async (req, res, next) => {
     try {
+        const text = 'hello';
+        console.log(text)
+        return res.send({result: text});
+    } catch (e) {
+        console.log(e);
+        next(e);
+    }
+}
+
+exports.createMessage = async (req, res, next) => {
+    try {
         const {message} = req.query;
         const result = await userService.hello(message);
         return res.send(result);

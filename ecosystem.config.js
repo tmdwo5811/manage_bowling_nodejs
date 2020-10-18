@@ -1,6 +1,6 @@
 module.exports = {
-    app:[{
-        name: 'app_bowling_api',
+    apps:[{
+        name: 'bowling_app',
         script: './app.js',
         instances: 1,
         exec_mode: 'cluster'
